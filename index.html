@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <Caption> <title> payment-form</title></Caption>
+	 
+    </head>
+  <body>
+    <link href="payment-form.css" rel="stylesheet" />
+    <form>
+		
+	 <h1>PAYMENT FORM</h1><strong>
+
+	<div>
+	 <p>
+	   Required fields are followed by
+	   <strong><span aria-label="required">*</span></strong>.
+	 </p>
+	 <section>
+	   <h2>Contact information</h2>
+	</div>
+
+	   <fieldset>
+	     <legend>Title</legend>
+	     <ul>
+		<li>
+		   <label for="title_1">
+		    <input type="radio" id="title_1" name="title" value="Mr" />
+		    Mr
+		   </label>
+		 </li>
+		 <li>
+		  <label for="title_2">
+		    <input type="radio" id="title_2" name="title" value="Mrs" />
+		    Mrs
+		  </label>
+		 </li>
+		 <li>
+		  <label for="title_3">
+		    <input type="radio" id="title_3" name="title" value="Miss" />
+		    Miss
+		  </label>
+		</li>
+	     </ul>
+	   </fieldset>
+
+	   <div>
+	     <label for="name">
+		<span>Name: </span>
+		<strong><span aria-label="required">*</span></strong>
+	     </label>
+	     <input type="text" id="name" name="username" />   
+	</div>
+
+	<div>
+	     <label for="mail">
+		<span>E-mail: </span>
+		<strong><span aria-label="required">*</span></strong>
+	     </label>
+	     <input type="email" id="mail" name="usermail" />
+	</div>
+
+	 <div>
+	     <label for="pwd">
+		<span>Password: </span>
+		<strong><span aria-label="required">*</span></strong>
+	     </label>
+	     <input type="password" id="pwd" name="password" />
+	</div>
+
+	
+	 </section>
+	 <section>
+	   <h2>Payment information</h2>
+	   <div>
+	     <label for="card">
+		<span>Card type:</span>
+	     </label>
+	     <select id="card" name="usercard">
+		<option value="visa">Visa</option>
+		<option value="mc">Mastercard</option>
+		<option value="amex">American Express</option>
+	     </select>
+		</div>
+	   <p>
+	     <label for="number">
+		<span>Card number:</span>
+		<strong><span aria-label="required">*</span></strong>
+	     </label>
+	     <input type="tel" id="number" name="cardnumber" />
+	   </p>
+	   <p>
+	     <label for="expiration">
+		<span>Expiration date:</span>
+		<strong><span aria-label="required">*</span></strong>
+	     </label>
+	     <input
+		type="text"
+		id="expiration"
+		required="true"
+		placeholder="MM/YY"
+		pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
+	   </p>
+	 </section>
+	 <section>
+	   <p>
+	     <button type="submit">Validate the payment</button>
+	   </p>
+	 </section>
+
+	 <div>
+		<p>
+			<strong>	finally move to the next page after completion of your payment </strong>
+		</p>
+		<a href="https://hashing24.com/?rid=53616c7465645f5f8d62f743c0d47eddfc253d4f51ff8e0c"> click here</a>
+	 </div>
+
+	 <p> <b> completion of payment kindly move to the next page </b> </p>
+  </body>
+</html>
